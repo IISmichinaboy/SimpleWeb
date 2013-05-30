@@ -71,7 +71,6 @@
 			<version>${spring.version}</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<finalName>web</finalName>
 		<!-- jetty插件 -->
