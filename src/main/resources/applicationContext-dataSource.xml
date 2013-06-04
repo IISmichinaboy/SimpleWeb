@@ -50,6 +50,19 @@
 		</property>
 	</bean>
 
+	<!-- 
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="hibernateTemplate" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyTargetClass">
+			<value>true</value>
+		</property>
+	</bean>
+	 -->
+	
 	<!-- 基础dao层hibernate实现 -->
 	<bean id="baseDaoTemplate.Hibernate" class="shell.framework.dao.impl.HibernateBaseDaoTemplate">
 		<property name="sessionFactory">
@@ -63,5 +76,22 @@
 			<ref local="dataSource" />
 		</property>
 	</bean>
+
+    <!-- 基础dao层的mybatis实现 -->
+  <!--   <bean id="baseDaoTemplate.Mybatis" class="shell.framework.dao.impl.MybatisBaseDaoTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory" />
+    </bean> -->
+
+    <!-- mybatis之sessionFactory -->
+  <!--   <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="mapperLocations" value="classpath*:shell/framework/mapper/*.xml" />
+    </bean> -->
+    <!-- 自动扫描shell.framework.mapper包下的映射器接口，并自动创建MapperFactoryBean，来创建基于接口的映射器 -->
+ <!--    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="shell.framework.mapper" />
+    </bean> -->
+
+
 
 </beans>
