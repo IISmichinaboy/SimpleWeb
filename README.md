@@ -1,2 +1,2 @@
-SimpleWeb
+Simple
 =========
