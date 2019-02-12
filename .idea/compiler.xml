@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="akka-sample" />
+        <module name="rxjava2-sample" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="akka-sample" target="1.8" />
+      <module name="akka-simple" target="1.8" />
+      <module name="rxjava2-sample" target="1.8" />
+      <module name="rxjava2-simple" target="1.8" />
+      <module name="simple-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

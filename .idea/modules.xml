@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/akka-sample/akka-sample.iml" filepath="$PROJECT_DIR$/akka-sample/akka-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava2-sample/rxjava2-sample.iml" filepath="$PROJECT_DIR$/rxjava2-sample/rxjava2-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-parent.iml" filepath="$PROJECT_DIR$/simple-parent.iml" />
+    </modules>
+  </component>
+</project>
